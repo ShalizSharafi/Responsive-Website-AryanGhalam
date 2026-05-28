@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@layer base{
+       @font-face {
+              font-family: Bold;
+              src: url(../fonts/assets_font_IRANYekanXFaNum-Bold.woff2);
+       }
+       @font-face {
+              font-family: Regular;
+              src: url(../fonts/assets_font_IRANYekanXFaNum-Regular.woff2);
+       }
+
+       .font-bold{
+              font-family: Bold;
+       }
+       .font-regular{
+              font-family: Regular;
+       }
+
+}
+
+@layer utilities{
+       .row{
+              @apply flex flex-wrap w-full 
+       }
+}
+
+@layer components{
+       .card{
+              @apply flex flex-wrap w-62.5 h-75 md:w-50 lg:w-62.5 xl:w-1/4  *:nth-[1]:h-2/3 *:nth-[2]:h-1/3 *:w-full *:nth-[2]:flex-wrap *:nth-[1]:items-center *:nth-[1]:justify-center p-5 bg-white hover:-translate-y-1 lg:hover:-translate-y-3 hover:shadow-xl hover:shadow-color1/15 *:flex  shadow shadow-gray-500 rounded-[5px] duration-500
+       }
+       .cart{
+              @apply w-10 h-10  flex items-center justify-center shadow shadow-gray-500 bg-white duration-500 hover:bg-color2 hover:shadow-none rounded-[5px] *:w-2/3 *:h-2/3 *:object-cover cursor-pointer
+       }
+       .card2{
+              @apply w-full p-5 xl:p-8  flex *:nth-[2]:h-full *:nth-[2]:flex-wrap items-center  *:nth-[1]:w-12 xl:*:nth-[1]:w-16 *:nth-[1]:h-12 xl:*:nth-[1]:h-16 *:nth-[1]:[clip-path:circle(45%)] bg-light *:flex gap-2 hover:-translate-y-1 lg:hover:-translate-y-3 hover:shadow-xl hover:shadow-color1/15 shadow shadow-gray-500 rounded-[5px] duration-500
+       }
+       
+}
+@theme{
+       --color-color1: #16687e;
+	--color-color2: #f99f1b;
+       --color-color3: #e6327c;
+       --color-header: #ffe9c8;
+       --color-light: #fdf9f6;
+       --color-lighter: #f7f7f7;
+       --border_light: #f3efee;
+       --color-text: #292929;
+       --color-footer: #121d2f;
+       --color-tabs: #ededed;
+}
