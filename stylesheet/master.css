@@ -35,10 +35,16 @@
        .card2{
               @apply w-full p-5 xl:p-8  flex *:nth-[2]:h-full *:nth-[2]:flex-wrap items-center  *:nth-[1]:w-12 xl:*:nth-[1]:w-16 *:nth-[1]:h-12 xl:*:nth-[1]:h-16 *:nth-[1]:[clip-path:circle(45%)] bg-light *:flex gap-2 hover:-translate-y-1 lg:hover:-translate-y-3 hover:shadow-xl hover:shadow-color1/15 shadow shadow-gray-500 rounded-[5px] duration-500
        }
+       .card3{
+              @apply flex  w-1/2 lg:w-1/5 p-2.5   *:w-full *:h-full *:flex-wrap *:flex *:rounded-3xl *:gap-4 *:p-4 *:pb-10 *:justify-center 
+       }
+       .yellowlink{
+              @apply flex absolute justify-between items-center -bottom-4.5 w-25 md:w-2/4 xl:w-fit px-2 xl:px-2.5 py-1.5 gap-2.5 *:text-white *:text-[14px] left-1/2 -translate-x-1/2 bg-color2 rounded-3xl 
+       }
        
 }
 @theme{
-       --color-color1: #16687e;
+       --color-color1: #16687e; 
 	--color-color2: #f99f1b;
        --color-color3: #e6327c;
        --color-header: #ffe9c8;
