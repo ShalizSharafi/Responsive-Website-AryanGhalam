@@ -41,6 +41,9 @@
        .yellowlink{
               @apply flex absolute justify-between items-center -bottom-4.5 w-25 md:w-2/4 xl:w-fit px-2 xl:px-2.5 py-1.5 gap-2.5 *:text-white *:text-[14px] left-1/2 -translate-x-1/2 bg-color2 rounded-3xl 
        }
+       .minilink{
+              @apply flex w-full lg:w-fit gap-2 px-2 py-1.5 *:text-[14px] text-black items-center 
+       }
        
 }
 @theme{
@@ -48,6 +51,7 @@
 	--color-color2: #f99f1b;
        --color-color3: #e6327c;
        --color-header: #ffe9c8;
+       --color-gray1:#777;
        --color-light: #fdf9f6;
        --color-lighter: #f7f7f7;
        --border_light: #f3efee;
