@@ -50,6 +50,9 @@
        .aboutFigures{
               @apply flex items-center justify-center lg:w-1/8 p-4 h-32  w-28 shadow shadow-gray-500 hover:-translate-y-1 lg:hover:-translate-y-3 hover:shadow-xl hover:shadow-color1/15 duration-700
        }
+       .footerLink{
+              @apply w-10 h-10  bg-white duration-500  rounded-[5px] cursor-pointer 
+       }
        
 }
 @theme{
